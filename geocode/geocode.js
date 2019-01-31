@@ -7,7 +7,7 @@ const geocode =  (address, callback) => {
     const encodedAddress = encodeURIComponent(address);
 
     request({
-        url:`http://www.mapquestapi.com/geocoding/v1/address?key=5tAh7rP6TXFeUOGprKfeFZynKO5hGEfO&location=${encodedAddress}`,
+        url:`http://www.mapquestapi.com/geocoding/v1/address?key=YOUR_KEY&location=${encodedAddress}`,
         json:true
     },(error,response,body)=>{
 
